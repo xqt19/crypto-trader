@@ -16,6 +16,7 @@ public class Marketdata {
     @Column(name="askprice", precision=10)
     private double askprice;
 
+
     public Marketdata(long id, String name, double bidprice, double askprice) {
         this.id = id;
         this.name = name;

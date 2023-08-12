@@ -12,25 +12,17 @@ public class Trade {
     @Column(name="price")
     private double price;
 
-    public Trade(long id, String name, double price) {
+    @Column(name="customer_id")
+    private long customer_id;
+
+
+    public Trade(long id, String name, double price, long customer_id) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.customer_id = customer_id;
     }
 
-    public Trade(){};
+    public Trade(){}
 
-    public long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public String toString() {return "ID-"+ this.id + " Name-"+ this.name + " Price-"+ this.price;}
 }
