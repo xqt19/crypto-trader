@@ -1,4 +1,5 @@
 package com.xqt.springboot.cryptotrader;
+import com.xqt.springboot.cryptotrader.trade.Trade;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.*;
